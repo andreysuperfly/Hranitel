@@ -1,0 +1,7 @@
+<Project>
+  <!-- CS0579: wpftmp/main дублируют атрибуты. Отключаем авто-генерацию; свой AssemblyInfo. -->
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,27 @@
+<UserControl x:Class="Hranitel.Controls.TimeEdit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MinWidth="124">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="TimeEditBg" Color="#2E3039"/>
+        <SolidColorBrush x:Key="TimeEditFg" Color="#E8E6F0"/>
+        <SolidColorBrush x:Key="TimeEditBorder" Color="#3D3E48"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="HourBox" Width="52" Height="34" Margin="0,0,4,0"
+                  Background="{StaticResource TimeEditBg}" Foreground="{StaticResource TimeEditFg}"
+                  BorderBrush="{StaticResource TimeEditBorder}" BorderThickness="1"
+                  Padding="8,5" FontSize="14" FontWeight="Medium"/>
+        <TextBlock Grid.Column="1" Text=":" Foreground="#6B6980" FontSize="16" FontWeight="Light"
+                   VerticalAlignment="Center" Margin="2,0"/>
+        <ComboBox x:Name="MinuteBox" Grid.Column="2" Width="52" Height="34" Margin="4,0,0,0"
+                  Background="{StaticResource TimeEditBg}" Foreground="{StaticResource TimeEditFg}"
+                  BorderBrush="{StaticResource TimeEditBorder}" BorderThickness="1"
+                  Padding="8,5" FontSize="14" FontWeight="Medium"/>
+    </Grid>
+</UserControl>

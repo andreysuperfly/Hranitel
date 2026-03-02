@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- wpftmp наследует исходники и дублирует TargetFramework. Исключаем. -->
+  <ItemGroup Condition="$(MSBuildProjectName.Contains('wpftmp'))">
+    <Compile Remove="Properties\AssemblyInfo.cs"/>
+  </ItemGroup>
+
+  <Target Name="GenerateIcon" BeforeTargets="BeforeBuild">
+    <Exec Command="dotnet run --project GenIcon" IgnoreExitCode="true" ContinueOnError="true"/>
+  </Target>
+  <ItemGroup>
+    <Compile Remove="GenIcon\**" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>WindowsGift</AssemblyName>
+  </PropertyGroup>
+
+</Project>

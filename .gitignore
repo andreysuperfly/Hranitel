@@ -1,0 +1,54 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Oo]ut/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific
+*.suo
+*.userprefs
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Build outputs
+publish/
+*.log
+*.tmp
+*.temp
+
+# Inno Setup output (генерируется при сборке установщика)
+Hranitel/bin/
+
+# Собранные установщики — загружайте через GitHub Releases
+Hranitel_Release/*.exe
+
+# OS
+.DS_Store
+Thumbs.db
