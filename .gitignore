@@ -1,0 +1,36 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+
+# Publish
+[Ee]xpress/
+[Pp]ublish/
+*.publish.xml
+
+# macOS
+.DS_Store
+
+# Misc
+*.cache
+*.dbmdl
+*.pfx
+*.publishsettings
